@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Website Logger",
+    "version": "1.0",
+    "description": "Logs visited websites in the console.",
+    "permissions": [
+      "activeTab",
+      "webNavigation"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+   
+      }
+    },
+    "icons": {
+   
+    },
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+   }
+   
