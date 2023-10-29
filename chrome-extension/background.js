@@ -11,7 +11,6 @@ let payments_word = [
    chrome.webNavigation.onCompleted.addListener(function(details) {
     console.log("Visited website: " + details.url);
    
-   
     for(let i = 0; i < payments_word.length; i++){
      if(url.includes(payments_word[i])){
    
