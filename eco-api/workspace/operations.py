@@ -1,5 +1,5 @@
 import mysql.connector
-
+from URLs import green_urls
 # Connect to the MySQL database
 db = mysql.connector.connect(
     host='localhost',

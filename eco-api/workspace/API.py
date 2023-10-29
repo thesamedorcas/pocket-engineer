@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from database import get_user_points, add_points_to_user, login_user, get_user_info, register_user
+from operations import get_user_points, add_points_to_user, login_user, get_user_info, register_user
 
 app = Flask(__name__)
 
