@@ -1,0 +1,76 @@
+**Program Specification:**
+
+The program is a task management application that allows users to create, update, and manage tasks. It should have the following features:
+
+1. User Authentication:
+   - Users should be able to register an account with a unique username and password.
+   - Users should be able to log in to their account using their username and password.
+   - Users should be able to log out of their account.
+
+2. Task Management:
+   - Users should be able to create a new task with a title, description, and due date.
+   - Users should be able to view a list of all their tasks.
+   - Users should be able to view the details of a specific task.
+   - Users should be able to update the details of a task, including the title, description, and due date.
+   - Users should be able to mark a task as completed.
+   - Users should be able to delete a task.
+
+3. Task Filtering and Sorting:
+   - Users should be able to filter tasks based on their completion status (completed or not completed).
+   - Users should be able to sort tasks based on their due date (ascending or descending).
+
+4. User Interface:
+   - The program should have a command-line interface (CLI) for users to interact with.
+   - The CLI should display a menu of options for users to choose from.
+   - The CLI should provide clear instructions and prompts for users to input data.
+
+**Core Classes, Functions, and Methods:**
+
+1. User:
+   - Represents a user account.
+   - Properties:
+     - username: str (the unique username of the user)
+     - password: str (the password of the user)
+   - Methods:
+     - register(username: str, password: str) -> User: Registers a new user account with the given username and password.
+     - login(username: str, password: str) -> User: Logs in to the user account with the given username and password.
+     - logout(): Logs out of the user account.
+
+2. Task:
+   - Represents a task.
+   - Properties:
+     - title: str (the title of the task)
+     - description: str (the description of the task)
+     - due_date: datetime (the due date of the task)
+     - completed: bool (the completion status of the task)
+   - Methods:
+     - create(title: str, description: str, due_date: datetime) -> Task: Creates a new task with the given title, description, and due date.
+     - update(title: str, description: str, due_date: datetime): Updates the details of the task with the given title, description, and due date.
+     - mark_completed(): Marks the task as completed.
+     - delete(): Deletes the task.
+
+3. TaskManager:
+   - Manages the tasks for a user.
+   - Properties:
+     - tasks: List[Task] (the list of tasks for the user)
+   - Methods:
+     - get_all_tasks() -> List[Task]: Returns a list of all tasks for the user.
+     - get_task_details(task_id: int) -> Task: Returns the details of the task with the given task ID.
+     - filter_tasks(completed: bool) -> List[Task]: Returns a list of tasks filtered by completion status.
+     - sort_tasks(by_due_date: str) -> List[Task]: Returns a list of tasks sorted by due date.
+
+4. CLI:
+   - Provides a command-line interface for users to interact with.
+   - Methods:
+     - display_menu(): Displays the menu of options for users to choose from.
+     - get_user_input(prompt: str) -> str: Prompts the user for input and returns the user's response.
+     - show_tasks(tasks: List[Task]): Displays the list of tasks.
+     - show_task_details(task: Task): Displays the details of a specific task.
+     - show_message(message: str): Displays a message to the user.
+
+5. Main:
+   - The entry point of the program.
+   - Methods:
+     - main(): The main function that runs the program.
+
+**Note:** The above classes, functions, and methods are just a starting point and may be subject to change based on the implementation requirements.

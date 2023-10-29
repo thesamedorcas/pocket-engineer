@@ -1,0 +1,11 @@
+create an api in python that does the following: 
+1. accepts url and user email, if url is part of the list of green urls adds 10 points to the user
+2. returns the amount of points a particular user has
+3. gives users the ability to log in woth emails and passwords
+4. when you call dashboard route, I want you to return information about the user and the points they have
+
+INSTRUCTIONS YOU SHOULD COMPLY TO:
+1. Use python
+2. don't use classes, use functions
+3. name the functions with what they do
+4. it should be easy to understand for a beginner
